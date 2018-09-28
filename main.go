@@ -2,10 +2,10 @@ package main
 
 import (
 	"./crypto"
-	"fmt"
+	"./diffcheck"
 )
 
 func main() {
-	data := crypto.SeedCryptos(40)
-	fmt.Println(data)
+	hashs := crypto.SeedSha1Hashs(40)
+	dc := diffcheck.New()
 }

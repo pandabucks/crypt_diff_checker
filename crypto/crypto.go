@@ -9,7 +9,7 @@ import (
 var rs1Letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
 // create random SHA1 map object .
-func SeedCryptos(num int) []string {
+func SeedSha1Hashs(num int) []string {
 	h := sha1.New()
 	var result []string
 	for i := 0; i < num; i++ {
